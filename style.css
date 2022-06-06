@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-header: 'Kdam Thmor Pro', sans-serif;
+  --font-p: 'Manrope', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  color: white;
+
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  width: min(50rem, 100%);
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-inline: 2.4rem;
+}
+
+nav {
+  padding-top: 1rem;
+  display: flex;
+  font-family: var(--font-header);
+}
+
+nav h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav .menu {
+  width: 100%;
+  padding-block: 1rem;
+}
+
+nav .menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .menu a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  padding-block: 5rem;
+}
+
+section .content {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+.info-div {
+  padding-block: 0.5rem;
+}
+.info-div p {
+  font-size: 1.4rem;
+  font-family: var(--font-p);
+  color: tomato;
+}
+
+#problems .problem-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#problems .problem-card {
+  padding: 2.4rem;
+  text-align: left;
+
+  background: #fff;
+
+  border: 1px solid black;
+  border-radius: 0.6rem;
+}
+
+#problems .problem-card header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+#problems .problem-card h3 {
+  font-size: 2rem;
+  font-family: var(--font-header);
+  text-transform: uppercase;
+}
+
+#problems .problem-card a {
+  text-decoration: none;
+  color: black;
+}
+
+#problems .problem-card .card-content p {
+  font-size: 1.6rem;
+  font-family: var(--font-p);
+  line-height: 150%;
+  padding-inline: 0.5rem;
+  background-color: antiquewhite;
+}
+
+#problems .problem-card .card-inp-out-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding-block: 0.5rem;
+}
+
+.problem-card .card-inp-out-content .inp-content {
+  width: 50%;
+  padding: 0.5rem;
+}
+#problems .problem-card .card-inp-out-content .inp-content h4 {
+  font-size: 1.8rem;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: black;
+}
+#problems .problem-card .card-inp-out-content .inp-content p {
+  font-size: 1.6rem;
+  line-height: 150%;
+  text-align: center;
+  color: black;
+  background-color: aquamarine;
+}
+
+.problem-card .card-inp-out-content .out-content {
+  width: 50%;
+  padding: 0.5rem;
+}
+#problems .problem-card .card-inp-out-content .out-content h4 {
+  font-size: 1.8rem;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: black;
+}
+#problems .problem-card .card-inp-out-content .out-content p {
+  font-size: 1.6rem;
+  line-height: 150%;
+  text-align: center;
+  color: black;
+  background-color: cadetblue;
+}
